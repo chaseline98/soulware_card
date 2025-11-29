@@ -1,6 +1,6 @@
 export default function AppHeader({
-  moduleName = "Quack for Courage Module",
-  missionName = "Mission 1 // Awareness Patch v1.0",
+  moduleName = "Quack for Courage Protocol",
+  missionName = "Primary Fear Response Scan v1.0",
 }: {
   moduleName?: string;
   missionName?: string;
