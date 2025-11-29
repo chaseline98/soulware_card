@@ -1,8 +1,11 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { SoulCard } from "@/components/SoulCard";
 
 export default function ProtocolExplanationCard() {
+  const router = useRouter();
+
   return (
     <SoulCard>
       {/* HEADER */}
@@ -79,6 +82,7 @@ export default function ProtocolExplanationCard() {
       {/* CTA */}
       <div className="w-full flex justify-center">
         <button
+          onClick={() => router.push("/scan")}
           className="
             bg-[#FF6B35]
             hover:bg-[#CC1A1A]

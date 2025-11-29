@@ -9,12 +9,12 @@ export function SoulCard({ children }) {
         mx-auto
         rounded-3xl
         overflow-hidden
-        bg-white/95
-        backdrop-blur-xl
+        bg-white/90
+        backdrop-blur-2xl
         border border-[#E3DCC4]/50
         relative
         p-10 md:p-14
-        shadow-[0_8px_20px_rgba(0,0,0,0.06)]
+        shadow-[0_8px_30px_rgba(0,0,0,0.12)]
       "
       style={{
         boxShadow: `

@@ -5,8 +5,8 @@ export default function PageBackground({ children }: { children: React.ReactNode
         min-h-screen
         relative
         bg-gradient-to-br
-        from-[#F8F3E8]/90
-        to-[#D9CBB0]/90
+        from-[#ECE3D4]
+        to-[#C7B79E]
         flex
         flex-col
       "
