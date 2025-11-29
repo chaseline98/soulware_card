@@ -75,7 +75,7 @@ export default function ScanRunPage() {
             1.0 // Fear Response Scan
           </div>
 
-          <ScanProgressBar currentIndex={currentIndex} total={TOTAL_QUESTIONS} groupCount={GROUP_COUNT} />
+          <ScanProgressBar currentIndex={currentIndex} />
 
           {showFeedback && feedbackGroupIndex !== null ? (
             <div className="rounded-2xl border border-[#E3DCC4] bg-[#F8F3E8]/90 px-6 py-5">

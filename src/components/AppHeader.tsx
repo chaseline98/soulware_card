@@ -1,6 +1,6 @@
 export default function AppHeader({
   moduleName = "Quack for Courage Protocol",
-  missionName = "Primary Fear Response Scan v1.0",
+  missionName = "Fear / Response Scan v1.0",
 }: {
   moduleName?: string;
   missionName?: string;
@@ -24,12 +24,12 @@ export default function AppHeader({
             <sup className="text-sm text-[#2C2C25]">™</sup>{" "}
             <span className="text-[#FF6B35] font-semibold">OS</span>
           </h1>
-          <h2 className="text-lg md:text-xl font-inter text-[#2C2C25]/90 mt-1">
+          <h2 className="text-lg md:text-xl font-inter text-[#2C2C25]/90 mt-0.5">
             {moduleName}
           </h2>
-          <p className="text-sm md:text-base font-inter text-[#2C2C25]/70">
+          <h3 className="text-base md:text-lg font-inter text-[#2C2C25]/80 mt-0.5">
             {missionName}
-          </p>
+          </h3>
         </div>
         {/* Right: placeholder for Clerk avatar */}
         <div className="hidden md:flex w-16 h-16 items-center justify-end">
