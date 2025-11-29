@@ -4,5 +4,5 @@ export interface ScoringProfile {
 }
 
 export function scoreResponse(value: number): number {
-  return value; // placeholder scoring
+  return value;
 }

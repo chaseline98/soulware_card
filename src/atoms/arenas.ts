@@ -10,7 +10,7 @@ export const ARENA_ATOMS: Record<ArenaKey, ArenaAtom> = {
   work: {
     key: "work",
     label: "Work",
-    prefix: "When Im working,",
+    prefix: "When I'm working,",
   },
   relationships: {
     key: "relationships",
@@ -20,7 +20,7 @@ export const ARENA_ATOMS: Record<ArenaKey, ArenaAtom> = {
   self: {
     key: "self",
     label: "Self / Identity",
-    prefix: "When I’m alone with my thoughts,",
+    prefix: "When I'm alone with my thoughts,",
   },
   social: {
     key: "social",

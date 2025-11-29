@@ -4,22 +4,15 @@ import React from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import PageBackground from "@/components/PageBackground";
 import AppHeader from "@/components/AppHeader";
-import {
-  FEAR_SCAN_QUESTIONS,
-  TOTAL_QUESTIONS,
-  GROUP_COUNT,
-  GROUP_SIZE,
-} from "@/config/fearScanConfig";
+import { ARENA_ATOMS, SCAN_STAGES, buildFullScan } from "@/atoms";
 import ScanProgressBar from "@/components/ScanProgressBar";
 import ScanCard from "@/components/ScanCard";
 
-const GROUP_LABELS = [
-  "Spotlight Fear",
-  "Rejection Fear",
-  "Shame / Not Enough",
-  "Perfectionism / Exposure",
-  "Conflict Avoidance",
-];
+const QUESTIONS = buildFullScan();
+const TOTAL_QUESTIONS = QUESTIONS.length;
+const GROUP_COUNT = SCAN_STAGES.length;
+const GROUP_SIZE = GROUP_COUNT > 0 ? Math.max(1, Math.round(TOTAL_QUESTIONS / GROUP_COUNT)) : 5;
+const GROUP_LABELS = SCAN_STAGES.map((stage) => ARENA_ATOMS[stage.arena].label);
 
 export default function ScanRunPage() {
   const searchParams = useSearchParams();
@@ -32,7 +25,7 @@ export default function ScanRunPage() {
   const [pendingIndex, setPendingIndex] = React.useState<number | null>(null);
   const [feedbackGroupIndex, setFeedbackGroupIndex] = React.useState<number | null>(null);
 
-  const currentQuestion = FEAR_SCAN_QUESTIONS[currentIndex];
+  const currentQuestion = QUESTIONS[currentIndex];
 
   const handleAnswer = (value: number) => {
     const newResponses = [...responses];
@@ -109,3 +102,4 @@ export default function ScanRunPage() {
     </PageBackground>
   );
 }
+

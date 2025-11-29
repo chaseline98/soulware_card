@@ -16,6 +16,6 @@ export function buildItem(arena: ArenaKey, stem: StemKey, id: number): QuestionI
     id,
     arena,
     stem,
-    text: `${a.prefix} ${s}`,
+    text: a.prefix + " " + s,
   };
 }
