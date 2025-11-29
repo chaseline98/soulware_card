@@ -39,7 +39,7 @@ export default function ProtocolExplanationCard() {
       <div className="flex items-start gap-3 mb-4">
         <div className="w-[3px] bg-[#CC1A1A]/70 rounded-full mt-1" />
         <h4 className="font-oswald uppercase tracking-widest text-[#CC1A1A] text-sm md:text-base">
-          WHAT THIS SCAN ACTUALLY DOES
+          01 // WHAT THIS SCAN ACTUALLY DOES
         </h4>
       </div>
       <p className="text-[#2C2C25]/80 mb-4 leading-relaxed">
@@ -57,11 +57,11 @@ export default function ProtocolExplanationCard() {
       <div className="flex items-start gap-3 mb-4">
         <div className="w-[3px] bg-[#CC1A1A]/70 rounded-full mt-1" />
         <h4 className="font-oswald uppercase tracking-widest text-[#CC1A1A] text-sm md:text-base">
-          HOW TO ANSWER
+          02 // HOW TO ANSWER
         </h4>
       </div>
       <p className="font-semibold text-[#2C2C25] mb-3">
-        You’re not here to give the right answers — you’re here to give the first ones.
+        You’re not here to give the right answers — you’re here to catch your first impulse.
       </p>
       <p className="text-[#2C2C25]/80 mb-12 leading-relaxed">
         Answer quickly. Don’t polish. The scan is listening for the reflex, not the performance.

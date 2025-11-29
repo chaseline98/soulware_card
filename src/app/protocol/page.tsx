@@ -6,7 +6,15 @@ export default function ProtocolPage() {
   return (
     <PageBackground>
       <AppHeader />
-      <main className="px-4 py-12 flex justify-center">
+      <main
+        className="
+          px-4 py-16
+          flex justify-center
+          rounded-3xl
+          overflow-hidden
+          relative
+        "
+      >
         <ProtocolExplanationCard />
       </main>
     </PageBackground>
